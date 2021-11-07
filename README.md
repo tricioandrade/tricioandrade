@@ -3,3 +3,5 @@
 - 🌱 I’m currently learning, php, javascript, network computer
 - 📫 How to reach me? 
 - mail: tricioandrade@outlook.com
+- linkedin: linkedin.com/in/tricioandrade
+- meta: fb.com/tricioandrad
