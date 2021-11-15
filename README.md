@@ -2,6 +2,6 @@
 - 👀 I’m interested in linux, bash script, etc..
 - 🌱 I’m currently learning, php, javascript, network computer
 - 📫 How to reach me? 
-- mail: tricioandrade@outlook.com
+- mail: tricioandrad@gmail.com
 - linkedin: linkedin.com/in/tricioandrade
 - meta: fb.com/tricioandrad
