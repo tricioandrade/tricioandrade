@@ -4,4 +4,4 @@
 - 📫 How to reach me? 
 - mail: tricioandrad@gmail.com
 - linkedin: linkedin.com/in/tricioandrade
-- meta: fb.com/tricioandrad
+- meta: fb.com/tricioandrade
