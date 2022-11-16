@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/tricioandrade/tricioandrade#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-common-types": "^6.2.1",
+    "@types/bootstrap": "^5.2.6",
     "bootstrap": "^5.2.2"
   },
   "devDependencies": {
