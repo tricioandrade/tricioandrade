@@ -1,0 +1,30 @@
+{
+  "name": "tricioandrade",
+  "version": "1.0.0",
+  "description": "- 👋 Hi, I’m @tricioandrade\r - 👀 I’m interested in linux, bash script, etc..\r - 🌱 I’m currently learning, php, javascript, network computer\r - 📫 How to reach me? \r - mail: tricioandrad@gmail.com\r - linkedin: linkedin.com/in/tricioandrade\r - meta: fb.com/tricioandrade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tricioandrade/tricioandrade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tricioandrade/tricioandrade/issues"
+  },
+  "homepage": "https://github.com/tricioandrade/tricioandrade#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.2",
+    "ts-loader": "^9.4.1"
+  }
+}
