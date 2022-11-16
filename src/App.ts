@@ -1,9 +1,50 @@
-import 'bootstrap/dist/css/b';
-import '@fortawesome/fontawesome-free';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+interface Routes {
+    [index: string]: string | number;
+}
+
+const routes: Routes =  {
+    contact: 'contact',
+    skills: 'skills',
+    about: 'about',
+    home: 'home',
+    404: '404'
+};
+
+const domWindow: any = window;
+
+const router = (event: Event) => {
+    const handler: any = event ?? domWindow.event;
+    handler.preventDefault();
+    domWindow.history.pushState({}, "", handler.target.href);
+    handleLocation();
+};
 
 
+function handleLocation():void {
+    const path = domWindow.location.pathname;
+    const route: string | number = routes[path] || routes[404];
+    getPage(route);
+}
 
-const body: HTMLElement = document.querySelector('body')!;
-body.innerHTML = "<i class='fa fa-home'></i><i class='fa-solid fa-house'></i><h1 class='btn btn-primary'>ola</h1>";
+function getPage(path: string | number): void {
+    switch (path) {
+    case 'skills':
+        break;
+    case 'contact':
+        break;
+    case 'about':
+        break;
+    case 'home':
+        break;
 
-console.log(body);
+    case '404':
+        break;
+    }
+}
+
+domWindow.route = router;
+handleLocation();
