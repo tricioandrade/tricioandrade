@@ -1,14 +1,9 @@
-import 'bootstrap';
-import '@fortawesome/fontawesome/css/fontawesome';
-import '@fortawesome/fontawesome/css/fontawesome.css';
-// import '@fortawesome/fontawesome-free';
+import 'bootstrap/dist/css/b';
+import '@fortawesome/fontawesome-free';
 
 
 
 const body: HTMLElement = document.querySelector('body')!;
-body.innerHTML = "<i class='fa-solid fa-home'></i>"   
-+
-`<h1 class='btn-primary'>ola</h1>`;
+body.innerHTML = "<i class='fa fa-home'></i><i class='fa-solid fa-house'></i><h1 class='btn btn-primary'>ola</h1>";
 
-// console.log(fontawesome);
-;
+console.log(body);

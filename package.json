@@ -4,7 +4,10 @@
   "description": "- 👋 Hi, I’m @tricioandrade\r - 👀 I’m interested in linux, bash script, etc..\r - 🌱 I’m currently learning, php, javascript, network computer\r - 📫 How to reach me? \r - mail: tricioandrad@gmail.com\r - linkedin: linkedin.com/in/tricioandrade\r - meta: fb.com/tricioandrade",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -27,7 +30,10 @@
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
+    "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
-    "ts-loader": "^9.4.1"
+    "ts-loader": "^9.4.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }
