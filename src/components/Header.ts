@@ -15,5 +15,4 @@ class Header extends HTMLElement{
     }
 }
 
-customElements.define('app-header', Header);
 export default Header;

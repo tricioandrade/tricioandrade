@@ -35,3 +35,4 @@ const router = (event: Event) => {
 domWindow.route = router;
 
 handleLocation();
+customElements.define('app-header', Header);
