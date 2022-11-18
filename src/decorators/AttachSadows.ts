@@ -1,5 +1,5 @@
 export function AttachShadows(){
-    return function(target: Object | any, key: string | symbol, Description: PropertyDescriptor){
-        console.log(target);
+    return function(target: any, key: string | symbol, descriptor: PropertyDescriptor){
+        console.log(descriptor);
     }
 }

@@ -28,6 +28,8 @@
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "aviya": "^2.0.5",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
     "html-webpack-plugin": "^5.5.0",

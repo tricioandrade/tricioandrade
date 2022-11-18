@@ -1,19 +1,10 @@
-import { AttachShadows } from "../decorators/AttachSadows";
+function home(createElement: (tagName: keyof HTMLElementTagNameMap) => HTMLElement ): HTMLElement {
+    const element: HTMLElement | any = createElement('div');
+    element.innerHTML = `
+        <h1>Hello</h1>
+    ` ;
 
-class Home extends HTMLElement {
-    home: string;
-    
-    static observedAttributes: [string] = ['home'];
-    constructor(){
-        super();
-        this.home = '';
-
-    }
-
-    @AttachShadows()
-    shadow () {
-        return this;
-    }
+    return element;
 }
 
-export default Home;
+export default home;

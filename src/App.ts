@@ -1,46 +1,40 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Home from './components/Home';
-
-interface Routes {
-    [index: string]: string | number;
-}
-
-const routes: Routes =  {
-    contact: 'contact',
-    skills: 'skills',
-    about: 'about',
-    home: 'home',
-    404: '404'
-};
+import home from "./components/Home";
 
 const domWindow: any = window;
 
+const selector =  document.querySelector;
+const createElement = document.createElement;
+
+const render = < T extends HTMLElement> (component: T) => {
+    const element: HTMLElement | any = selector('#root') as HTMLElement;
+    element.innerHTML = component;
+}
+
 function getPage(path: string | number): void {
     switch (path) {
-    case 'skills':
-        break;
-    case 'contact':
-        break;
-    case 'about':
-        break;
-    case 'home':
-        break;
+        case '/skills':
+            break;
+        case '/contact':
+            break;
+        case '/about':
+            break;
+        case '/home': render(home(createElement)); break;
+        case '/':
+                render(home(createElement));
+            break;
 
-    case '404':
-         (new Home()).shadow();
+    default:
+        console.timeLog();
         break;
     }
 }
 
 function handleLocation():void {
     const path: string = domWindow.location.pathname;
-    console.log(path);
-
-    const route: string | number = routes[path.slice(1)] || routes[404];
-    console.log(route);
-    getPage(route);
+    getPage(path);
 }
 
 
@@ -51,10 +45,7 @@ const router = (event: Event) => {
     handleLocation();
 };
 
-const dom: HTMLElement = document.querySelector('body')!;
-dom.innerHTML = ` <h1 class="btn btn-primary">olá</h1>
-        <a onClick = "route()" href="home"   >Click Aqui</a>`;
-
-
 domWindow.route = router;
+domWindow.selector = selector;
+
 handleLocation();
