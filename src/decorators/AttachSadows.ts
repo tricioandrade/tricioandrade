@@ -1,5 +1,10 @@
-export function AttachShadows(){
-    return function(target: any, key: string | symbol, descriptor: PropertyDescriptor){
-        console.log(descriptor);
-    }
-}
+// export function AttachShadows(){        
+//     return function(target: any, methodName: string, descr){
+//         return class extends HTMLElement {
+//                 constructor(..._: any[]){
+//                     super()
+//                     console.log(template);
+//                 }
+//         }
+//     }
+// }
