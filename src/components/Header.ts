@@ -1,7 +1,7 @@
 import { render } from "../templates/render";
-import {template} from "../templates/homeTemplate";
+import {template} from "../templates/headerTemplate";
 
-class Home extends HTMLElement{
+class Header extends HTMLElement{
     static main: any = this;
 
     constructor() {
@@ -11,9 +11,9 @@ class Home extends HTMLElement{
     }
 
     static open<T extends { new(): {style: HTMLStyleElement} }>(main: T | any) {
-        render(main);
+        // render(main);
     }
 }
 
-customElements.define('home-page', Home);
-export default Home;
+customElements.define('app-header', Header);
+export default Header;
