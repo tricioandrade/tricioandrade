@@ -1,6 +1,7 @@
 import { render } from "../templates/render";
 import {template} from "../templates/homeTemplate";
 
+
 class Home extends HTMLElement{
 
     constructor() {

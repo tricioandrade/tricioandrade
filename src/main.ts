@@ -3,6 +3,7 @@ import 'bootstrap/dist/js/bootstrap.min';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Home from "./components/Home";
 import Header from "./components/Header";
+import './style.css';
 
 const domWindow: any = window;
 
