@@ -2,7 +2,6 @@ import { render } from "../templates/render";
 import {template} from "../templates/homeTemplate";
 
 class Home extends HTMLElement{
-    static main: any = this;
 
     constructor() {
         super();
