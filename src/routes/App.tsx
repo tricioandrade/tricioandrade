@@ -1,7 +1,7 @@
 import React from "react";
-import Home from "../components/Home";
-import About from "../components/About";
-import Contact from "../components/Contact";
+import {Home} from "../components/Home";
+import {About} from "../components/About";
+import {Contact} from "../components/Contact";
 import {Routes, Route} from "react-router-dom";
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
             <Route path="/" element = { <Home/> } />
             <Route path="/home" element = { <Home/> } />
             <Route path="/about" element = { <About/> } />
-            <Route path="/contact" element = { <Inventory/> }/>
+            <Route path="/contact" element = { <Contact/> }/>
         </Routes>
     );
 }
